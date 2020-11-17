@@ -21,7 +21,7 @@ namespace Planner {
             _address = address;
         }
 
-        public void HireDesigner(string designer)
+        public void Designer(string designer)
         {
             _designer = designer;
         }

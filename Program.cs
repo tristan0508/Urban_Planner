@@ -13,7 +13,7 @@ namespace urban_planner
             Width = 60.5,
             Depth = 50.5
         };
-        FiveOneTwoEight.HireDesigner("Design, LLC");
+        FiveOneTwoEight.Designer("Design, LLC");
         FiveOneTwoEight.Construct();
         FiveOneTwoEight.Purchase("Bobby");
         FiveOneTwoEight.DisplayBuildingInfo();
