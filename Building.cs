@@ -20,9 +20,31 @@ namespace Planner {
         public Building(string address) {
             _address = address;
         }
-        _dateConstructed = DateTime.Now;
 
+        public void HireDesigner(string designer)
+        {
+            _designer = designer;
+        }
 
+        public void Construct()
+        {
+            _dateConstructed = DateTime.Now;
+        }
 
+        public void Purchase(string owner)
+        {
+            _owner = owner;
+        }
+
+        public void DisplayBuildingInfo()
+        {
+            Console.WriteLine("");
+            Console.WriteLine(_address);
+            Console.WriteLine("----------------");
+            Console.WriteLine($"Designed by {_designer}");
+            Console.WriteLine($"Constructed on {_dateConstructed}");
+            Console.WriteLine($"Owned by {_owner}");
+            Console.WriteLine($"{Volume} cubic meters of space.");
+        }
     }
 }
