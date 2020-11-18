@@ -1,7 +1,7 @@
 ﻿using System;
-using Planner;
 
-namespace urban_planner
+
+namespace Planner
 {
     class Program
     {
