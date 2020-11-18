@@ -7,6 +7,12 @@ namespace urban_planner
     {
         static void Main(string[] args)
         {
+            City RichCity = new City("Richmond", "Bob");
+            BuildCity(RichCity);
+            RichCity.buildings.ForEach(building => building.DisplayBuildingInfo());
+        }
+        static void BuildCity(City city)
+        {
             Building FiveOneTwoEight = new Building("512 8th Avenue")
         {
             Stories = 100,
@@ -16,7 +22,8 @@ namespace urban_planner
         FiveOneTwoEight.Designer("Design, LLC");
         FiveOneTwoEight.Construct();
         FiveOneTwoEight.Purchase("Bobby");
-        FiveOneTwoEight.DisplayBuildingInfo();
+        city.addBuilding(FiveOneTwoEight);
         }
+        
     }
 }
